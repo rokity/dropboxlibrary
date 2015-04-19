@@ -10,7 +10,13 @@ If you have composer add require part from my composer.json to your project and 
 Now copy autoload part in your composer.json and from terminal install the new composer and update .
 
 ## require
+
 Now we are ready for the game.
-For use my class copy ### dropbox.php  
+Copy "dropbox.php" file in your project's folder.
+For use my Library in your file PHP add require "dropbox.php"; .
+
+
+##Structure
+
 
 
