@@ -18,5 +18,9 @@ This is a sample class with the most important functionalities of Dropbox PHP AP
 
 ##Structure
 
+* Create the object 
+'''php
+$object=new \Dropboxlib("config.json",$_POST['key']);
+
 
 
