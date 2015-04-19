@@ -22,10 +22,35 @@ This is a sample class with the most important functionalities of Dropbox PHP AP
 
 * Create the object 
 ```php
+require "dropbox.php";
 //$key is the temporany key that dropbox give to user when he gives  permission
 //to your application from the authorization url 
 $object=new \Dropboxlib("config.json",$key);
 ```
+
+* Have list of file and folder in a specifi folder
+```php
+//the slash means the main directory of dropbox, but you can pass every path you want
+	$array=$object->get_folderList('/');
+```
+
+* The structure of the array is this
+	 [0] => Array
+                (
+                    [revision] => 2
+                    [rev] => 20def95ea
+                    [thumb_exists] =>
+                    [bytes] => 354
+                    [modified] => Sun, 17 Feb 2013 02:06:27 +0000
+                    [client_mtime] => Sun, 17 Feb 2013 02:06:27 +0000
+                    [path] => /working-draft.txt
+                    [is_dir] =>
+                    [icon] => page_white_text
+                    [root] => dropbox
+                    [mime_type] => text/plain
+                    [size] => 354 bytes
+                )
+
 
 
 
