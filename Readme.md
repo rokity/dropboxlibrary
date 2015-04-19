@@ -34,7 +34,8 @@ $object=new \Dropboxlib("config.json",$key);
 	$array=$object->get_folderList('/');
 ```
 
-* The structure of the array is this
+* The structure of the array is this:
+	* ```JSON
 	 [0] => Array
                 (
                     [revision] => 2
@@ -50,6 +51,8 @@ $object=new \Dropboxlib("config.json",$key);
                     [mime_type] => text/plain
                     [size] => 354 bytes
                 )
+                
+          ```
 
 
 
