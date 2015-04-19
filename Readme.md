@@ -73,7 +73,7 @@ $object=new \Dropboxlib("config.json",$key);
 	 $object->download_file($path_dropbox,$local_path);
 	```
 
-*Upload a file
+* Upload a file
 
 
 
@@ -87,7 +87,7 @@ $object=new \Dropboxlib("config.json",$key);
 
 
 
-*Create new folder
+* Create new folder
 
 
    ```php
