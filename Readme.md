@@ -21,6 +21,8 @@ This is a sample class with the most important functionalities of Dropbox PHP AP
 ##Structure
 
 * Create the object 
+
+
 ```php
 require "dropbox.php";
 //$key is the temporany key that dropbox give to user when he gives  permission
@@ -29,12 +31,17 @@ $object=new \Dropboxlib("config.json",$key);
 ```
 
 * Have list of file and folder in a specifi folder
+
+
+
 ```php
 //the slash means the main directory of dropbox, but you can pass every path you want
 	$array=$object->get_folderList('/');
 ```
 
 * The structure of the array is this:
+
+
 	 ```JSON
 	 [0] => Array
                 (
@@ -53,7 +60,13 @@ $object=new \Dropboxlib("config.json",$key);
                 )
                 
       ```
+      
+      
+      
 * Download a file
+
+
+
 	```php
 	 //$path_dropbox rappresent the path of the file in dropbox
 	 //$local_path rappresent the path of the file where put dropbox file 
@@ -62,6 +75,9 @@ $object=new \Dropboxlib("config.json",$key);
 
 *Upload a file
 
+
+
+
     ```php
     //$uplaodfile rappresent the real file, for example $['userfile']['tmp_name']
     //$name rappresent the real name of the new file in dropbox
@@ -69,7 +85,10 @@ $object=new \Dropboxlib("config.json",$key);
     $object->upload_file($uploadfile,$name,$folder);
     ```
 
+
+
 *Create new folder
+
 
 	```php
 	//the name it isn't the with slash in the end of string
