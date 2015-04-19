@@ -53,7 +53,29 @@ $object=new \Dropboxlib("config.json",$key);
                 )
                 
       ```
+* Download a file
+	```php
+	 //$path_dropbox rappresent the path of the file in dropbox
+	 //$local_path rappresent the path of the file where put dropbox file 
+	 $object->download_file($path_dropbox,$local_path);
+	```
 
+*Upload a file
+
+    ```php
+    //$uplaodfile rappresent the real file, for example $['userfile']['tmp_name']
+    //$name rappresent the real name of the new file in dropbox
+    //$folder rappresent the path where put the new file in dropbox for example /ciao/mario/rossi/
+    $object->upload_file($uploadfile,$name,$folder);
+    ```
+
+*Create new folder
+
+	```php
+	//the name it isn't the with slash in the end of string
+	//for example /ciao/new/folder this is right
+	$object->create_folder($name);
+	```
 
 
 
