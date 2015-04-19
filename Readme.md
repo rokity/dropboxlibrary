@@ -35,7 +35,7 @@ $object=new \Dropboxlib("config.json",$key);
 ```
 
 * The structure of the array is this:
-	* ```JSON
+	 ```JSON
 	 [0] => Array
                 (
                     [revision] => 2
@@ -52,7 +52,7 @@ $object=new \Dropboxlib("config.json",$key);
                     [size] => 354 bytes
                 )
                 
-          ```
+      ```
 
 
 
